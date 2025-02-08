@@ -28,6 +28,27 @@
                 height: 215px;
                 margin: 3px;
             }
+
+            @media (min-width: 1280px) {
+        .carte {
+            display: grid; /* Usa la griglia solo su HD */
+            grid-template-columns: repeat(3, 1fr); /* 3 carte per riga */
+            gap: 10px; /* Distanza tra le carte */
+            padding-left: 10px; /* Margine sinistro */
+            padding-right: 10px; /* Margine destro */
+        }
+    }
+
+    /* Media query per schermi Full HD (1920px) */
+    @media (min-width: 1920px) {
+        .carte {
+            display: grid; /* Usa la griglia solo su Full HD */
+            grid-template-columns: repeat(3, 1fr); /* 3 carte per riga */
+            gap: 10px; /* Distanza tra le carte */
+            padding-left: 10px; /* Margine sinistro */
+            padding-right: 10px; /* Margine destro */
+        }
+    }
       
         </style>
 
