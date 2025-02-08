@@ -38,7 +38,14 @@
             Il tuo browser non supporta l'elemento audio.
         </audio>        
 
-        
+        <script>
+            document.addEventListener("click", function() {
+                let audio = document.getElementById("bg-audio");
+                if (audio.paused) {
+                    audio.play().catch(error => console.log("Autoplay bloccato:", error));
+                }
+            }, { once: true }); // L'evento si attiva solo una volta
+        </script>
 
         <h1 style="margin-top: 15px;"> 
             <img src="immagini\Pokemon_TCG_Pocket_logo.png" alt="Caricamento immagine fallito" 
