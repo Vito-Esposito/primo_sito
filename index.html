@@ -6,7 +6,7 @@
         </title>
 
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <style>
                 .set{
@@ -26,7 +26,22 @@
                     display: inline-block;
                     height: 215px;
                     margin: 3px;
-             }
+                }
+
+                @media (max-width: 768px) {
+                    body {
+                        font-size: 14px;
+                        background-color: lightblue;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    body {
+                        font-size: 12px;
+                        background-color: lightgreen;
+                    }
+                }
+
         </style>
 
     </head>
