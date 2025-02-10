@@ -17,17 +17,35 @@
             }
 
             .carte{
-                display: inline-block;
+                display: block;
                 padding-top: 7px;
-                padding-left: 13px; /* Margine sinistro */
-                padding-right: 10px; /* Margine destro */
+                padding-left: 15px; /* Margine sinistro */
             }
 
             .carta{
                 height: 210px;
-                margin: 3px;
+                margin: 4px;
             }
-      
+
+            @media screen and (max-width: 1280px) {
+                .set{
+                display: block; 
+                height: 50px; 
+                margin: auto; 
+                padding-top: 10px;
+            }
+
+            .carte{
+                display: block;
+                padding-top: 7px;
+            }
+
+            .carta{
+                height: 170px;
+                margin: 4px;
+            }
+            }
+
         </style>
 
     </head>
